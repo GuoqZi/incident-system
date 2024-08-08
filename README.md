@@ -16,19 +16,19 @@ This application is designed for incident management, allowing users to create, 
 - Docker
 
 ## API Documentation
--  GET /incidents
+-  GET /incidents: 
 Returns a list of all incidents.
 
--  GET /incidents/{id}
+-  GET /incidents/{id}: 
 Returns an incidents.
 
--  PUT /incident
+-  PUT /incident: 
 Creates a new incident with the provided data.
 
--  POST /incident
+-  POST /incident: 
 Update an incident with the provided data.
 
--  DELETE /incidents/{id}
+-  DELETE /incidents/{id}: 
 Delete an incident.
 
 
