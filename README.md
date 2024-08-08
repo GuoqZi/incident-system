@@ -44,16 +44,16 @@ evidence and statics could be found in folder src/test/manual_test_files.
 
 
 ## Known Issues
-~~1. initialization of SQLite database is not working properly.
+~~- initialization of SQLite database is not working properly.
    initialization file of schema.sql cannot be executed, therefore indexing is not created. table structure is created with wrong data types.~~
-2. a global Exception Handling class is not implemented.
-3. warnings are not resolved.
-4. stress test should be performed with docker container.
+- a global Exception Handling class is not implemented.
+- warnings are not resolved.
+- stress test should be performed with docker container.
 
 
 ## Main Dependencies
 -  Spring Boot Data JPA Starter (org.springframework.boot:spring-boot-starter-data-jpa): 
-Simplifies the development of data access layers using Spring Data JPA by providing auto-configuration and default implementations.
+Simplifies the development of data access layers using Spring Data JPA by providing autoconfiguration and default implementations.
 -  Spring Boot Web Starter (org.springframework.boot:spring-boot-starter-web): 
    Includes all the dependencies required to build a Spring Boot web application, such as Spring Web and an embedded Tomcat server.
 -  Spring Boot Test Starter (org.springframework.boot:spring-boot-starter-test):  Provides dependencies for writing and running tests, including JUnit, Hamcrest, Mockito, etc.
