@@ -42,7 +42,8 @@ UTs are performed with
 it is performed with JMeter.
 evidence and statics could be found in folder src/test/manual_test_files.
 
-## 
+## requirements check list
+requirements check list is recorded in /requirement_list.xlsx
 
 ## Known Issues
 ~~- initialization of SQLite database is not working properly.
