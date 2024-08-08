@@ -2,7 +2,7 @@ package com.management.incident.config;
 
 import com.management.incident.model.entities.Incident;
 import com.management.incident.repository.IncidentRepository;
-import com.github.javafaker.Faker;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -21,13 +21,13 @@ public class InitializeData implements ApplicationRunner {
 		//Qty of records to add
 		Long max = 200l;
 		
-		Faker faker = new Faker(Locale.SIMPLIFIED_CHINESE);
-		
-		for (long i = incidentRepository.count(); i<max; i++) {
-			Incident incident = new Incident();
-			incident.setTitle(faker.name().fullName());
+//		Faker faker = new Faker(Locale.SIMPLIFIED_CHINESE);
+//
+//		for (long i = incidentRepository.count(); i<max; i++) {
+//			Incident incident = new Incident();
+//			incident.setTitle(faker.name().fullName());
 //			incidentRepository.save(incident);
-		}
+//		}
 
 		//十进制格式与faker内部完全相同
 		//需要将字符串解析为BigDecimal

@@ -56,6 +56,12 @@
 			<artifactId>sqlite-jdbc</artifactId>
 			<version>3.45.3.0</version>
 		</dependency>
+		<dependency>
+			<groupId>com.github.gwenn</groupId>
+			<artifactId>sqlite-dialect</artifactId>
+			<version>0.1.2</version>
+
+		</dependency>
 
 	</dependencies>
 

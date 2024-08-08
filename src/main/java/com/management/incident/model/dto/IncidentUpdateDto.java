@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.Entity;
 import javax.validation.constraints.NotNull;
 
-@Entity
+//@Entity
 public class IncidentUpdateDto {
 
 	@NotNull

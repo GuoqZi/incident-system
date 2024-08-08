@@ -5,8 +5,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.Entity;
 
-@Entity
+//@Entity
 public class IncidentAddDto {
+	private Long id;
 
 	private String title;
 

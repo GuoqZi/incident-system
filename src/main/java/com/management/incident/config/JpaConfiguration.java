@@ -13,66 +13,66 @@ import java.util.Properties;
 
 @Configuration
 public class JpaConfiguration {
-
-	@Value("${db.driverClassName}")
-	private String DRIVER_CLASS_NAME;
-	@Value("${db.url}")
-	private String URL;
-	@Value("${db.username}")
-	private String USER;
-	@Value("${db.password}")
-	private String PASSWORD;
-
-
-	@Value("${db.schema}")
-	private String SCHEMA;
-
-	@Value("${hibernate.hbm2ddl.auto}")
-	private String HIBERNATE_HBM2DDL_AUTO;
-	@Value("${hibernate.dialect}")
-	private String HIBERNATE_DIALECT;
-	@Value("${hibernate.show_sql}")
-	private String HIBERNATE_SHOW_SQL;
-	@Value("${hibernate.format_sql}")
-	private String HIBERNATE_FORMAT_SQL;
-	
-	@Bean
-	public DataSource dataSource() {
-	    final DriverManagerDataSource dataSource = new DriverManagerDataSource();
-	    dataSource.setDriverClassName(DRIVER_CLASS_NAME);
-	    dataSource.setUrl(URL);
-	    dataSource.setUsername(USER);
-	    dataSource.setPassword(PASSWORD);
-//		dataSource.setSchema(SCHEMA);
-
-
-
-	    return dataSource;
-	}
-	
-	@Bean
-	public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource,
-			Properties additionalProperties) {
-
-		LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
-
-		JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
-
-		factoryBean.setJpaVendorAdapter(vendorAdapter);
-		factoryBean.setDataSource(dataSource);
-		factoryBean.setJpaProperties(additionalProperties);
-		factoryBean.setPackagesToScan("com.management.incident.model.entities");
-
-		return factoryBean;
-	}
-
-	@Bean
-	public Properties additionalProperties() {
-		Properties props = new Properties();
-		props.setProperty("hibernate.dialect", HIBERNATE_DIALECT);
-		props.setProperty("hibernate.hbm2ddl.auto", HIBERNATE_HBM2DDL_AUTO);
-		props.setProperty("hibernate.show_sql", HIBERNATE_SHOW_SQL);
-		props.setProperty("hibernate.format_sql", HIBERNATE_FORMAT_SQL);
-		return props;
-	}
+//
+//	@Value("${db.driverClassName}")
+//	private String DRIVER_CLASS_NAME;
+//	@Value("${db.url}")
+//	private String URL;
+//	@Value("${db.username}")
+//	private String USER;
+//	@Value("${db.password}")
+//	private String PASSWORD;
+//
+//
+//	@Value("${db.schema}")
+//	private String SCHEMA;
+//
+//	@Value("${hibernate.hbm2ddl.auto}")
+//	private String HIBERNATE_HBM2DDL_AUTO;
+//	@Value("${hibernate.dialect}")
+//	private String HIBERNATE_DIALECT;
+//	@Value("${hibernate.show_sql}")
+//	private String HIBERNATE_SHOW_SQL;
+//	@Value("${hibernate.format_sql}")
+//	private String HIBERNATE_FORMAT_SQL;
+//
+//	@Bean
+//	public DataSource dataSource() {
+//	    final DriverManagerDataSource dataSource = new DriverManagerDataSource();
+//	    dataSource.setDriverClassName(DRIVER_CLASS_NAME);
+//	    dataSource.setUrl(URL);
+//	    dataSource.setUsername(USER);
+//	    dataSource.setPassword(PASSWORD);
+////		dataSource.setSchema(SCHEMA);
+//
+//
+//
+//	    return dataSource;
+//	}
+//
+//	@Bean
+//	public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource,
+//			Properties additionalProperties) {
+//
+//		LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
+//
+//		JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
+//
+//		factoryBean.setJpaVendorAdapter(vendorAdapter);
+//		factoryBean.setDataSource(dataSource);
+//		factoryBean.setJpaProperties(additionalProperties);
+//		factoryBean.setPackagesToScan("com.management.incident.model.entities");
+//
+//		return factoryBean;
+//	}
+//
+//	@Bean
+//	public Properties additionalProperties() {
+//		Properties props = new Properties();
+//		props.setProperty("hibernate.dialect", HIBERNATE_DIALECT);
+//		props.setProperty("hibernate.hbm2ddl.auto", HIBERNATE_HBM2DDL_AUTO);
+//		props.setProperty("hibernate.show_sql", HIBERNATE_SHOW_SQL);
+//		props.setProperty("hibernate.format_sql", HIBERNATE_FORMAT_SQL);
+//		return props;
+//	}
 }
