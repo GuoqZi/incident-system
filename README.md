@@ -35,12 +35,12 @@ Delete an incident.
 ## Unit Tests
 UTs are performed with 
 1. JUnit for single functions.
-2. Postman for API testing. evidence will be submitted separately.
+2. Postman for API testing. evidence could be found in folder src/test/manual_test_files.
 
 
 ## Stress Tests
 it is performed with JMeter.
-evidence and statics will be submitted separately.
+evidence and statics could be found in folder src/test/manual_test_files.
 
 
 ## Known Issues
@@ -52,14 +52,13 @@ evidence and statics will be submitted separately.
 
 
 ## Main Dependencies
--  Spring Boot Data JPA Starter (org.springframework.boot:spring-boot-starter-data-jpa)
+-  Spring Boot Data JPA Starter (org.springframework.boot:spring-boot-starter-data-jpa): 
 Simplifies the development of data access layers using Spring Data JPA by providing auto-configuration and default implementations.
--  Spring Boot Web Starter (org.springframework.boot:spring-boot-starter-web)
-Includes all the dependencies required to build a Spring Boot web application, such as Spring Web and an embedded Tomcat server.
--  Spring Boot Test Starter (org.springframework.boot:spring-boot-starter-test)
-Provides dependencies for writing and running tests, including JUnit, Hamcrest, Mockito, etc.
--  Spring Boot Validation Starter (org.springframework.boot:spring-boot-starter-validation)
+-  Spring Boot Web Starter (org.springframework.boot:spring-boot-starter-web): 
+   Includes all the dependencies required to build a Spring Boot web application, such as Spring Web and an embedded Tomcat server.
+-  Spring Boot Test Starter (org.springframework.boot:spring-boot-starter-test):  Provides dependencies for writing and running tests, including JUnit, Hamcrest, Mockito, etc.
+-  Spring Boot Validation Starter (org.springframework.boot:spring-boot-starter-validation): 
 Provides the Bean Validation API implementation, such as Hibernate Validator, for validating entity objects.
--  SQLite JDBC Driver (org.xerial:sqlite-jdbc)
+-  SQLite JDBC Driver (org.xerial:sqlite-jdbc): 
 Provides a JDBC driver for connecting to SQLite databases, suitable for development environments or lightweight applications.
 
