@@ -38,12 +38,14 @@ UTs are performed with
 
 ## Stress Tests
 it is performed with JMeter.
-evidence will be submitted separately.
+evidence and statics will be submitted separately.
 
 ## Known Issues
 1. initialization of SQLite database is not working properly.
    initialization file of schema.sql cannot be executed, therefore indexing is not created. table structure is created with wrong data types.
 2. a global Exception Handling class is not implemented.
+3. warnings are not resolved.
+4. stress test should be performed with docker container.
 
 ## Main Dependencies
 ### Spring Boot Data JPA Starter (org.springframework.boot:spring-boot-starter-data-jpa)
