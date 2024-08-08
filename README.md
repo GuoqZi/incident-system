@@ -44,8 +44,8 @@ evidence and statics could be found in folder src/test/manual_test_files.
 
 
 ## Known Issues
-1. initialization of SQLite database is not working properly.
-   initialization file of schema.sql cannot be executed, therefore indexing is not created. table structure is created with wrong data types.
+~~1. initialization of SQLite database is not working properly.
+   initialization file of schema.sql cannot be executed, therefore indexing is not created. table structure is created with wrong data types.~~
 2. a global Exception Handling class is not implemented.
 3. warnings are not resolved.
 4. stress test should be performed with docker container.
